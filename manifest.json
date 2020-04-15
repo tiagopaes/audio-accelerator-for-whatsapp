@@ -1,0 +1,14 @@
+{
+  "name": "Audio accelerator for whatsapp",
+  "description": "A simple audio accelerator for whatsapp web",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/"],
+      "css": ["style.css"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
