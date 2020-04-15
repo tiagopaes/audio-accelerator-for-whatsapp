@@ -21,19 +21,12 @@ button.addEventListener('change', (event) => {
   })
 })
 
-const tooltip = document.createElement('span')
-tooltip.classList.add('tooltip-text')
-tooltip.innerHTML = 'Playback speed'
-
 const container = document.createElement('div')
-container.classList.add('tooltip')
-
 container.appendChild(button)
-container.appendChild(tooltip)
 
-const init = (buttonContainer) => {
+const init = (buttonContainer, headerSelector) => {
   const interval = setInterval(() => {
-    const header = document.querySelector('._3auIg')
+    const header = document.querySelector(headerSelector)
     if (header) {
       header.appendChild(buttonContainer)
       clearInterval(interval)
@@ -41,4 +34,4 @@ const init = (buttonContainer) => {
   }, 1000)
 }
 
-init(container);
+init(container, '._3auIg');
