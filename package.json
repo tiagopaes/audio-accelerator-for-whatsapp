@@ -1,0 +1,26 @@
+{
+  "name": "audio-accelerator-for-whatsapp",
+  "version": "1.0.0",
+  "description": "A simple audio accelerator for whatsapp web",
+  "main": "contentScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint contentScript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagopaes/audio-accelerator-for-whatsapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/tiagopaes/audio-accelerator-for-whatsapp/issues"
+  },
+  "homepage": "https://github.com/tiagopaes/audio-accelerator-for-whatsapp#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3"
+  }
+}
